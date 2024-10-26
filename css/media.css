@@ -1,0 +1,125 @@
+@media (max-width:479px) {
+    .item1 h1{
+        font-size: 30px;
+    }
+}
+@media (min-width:479px){
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(2 , 50%);
+        grid-template-rows: repeat(8 , auto) ;
+        grid-template-areas:
+        "item1 item1"
+        "item2 item2"
+        "item3 item4"
+        "item5 item5"
+        "item6 item8"
+        "item7 item8"
+        "item9 item9"
+        "item10 item10";
+    }
+    .item1{
+        grid-area: item1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item1 h1{
+        font-size: 48px;
+    }
+    .item2{
+        grid-area: item2;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .item2 .item2-text ,
+    .item2 .item-img{
+        flex-basis: 35%;
+    }
+    .item3{
+        grid-area: item3;
+        padding-top: 30px;
+    }
+    .item4{
+        grid-area: item4;
+        padding-top: 30px;
+    }
+    .item4 .item-img{
+        width: 70%;
+        right: 8%;
+        margin: 0 auto;
+    }
+    .item5{
+        grid-area: item5;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .item5 .item5-top ,
+    .item5 .item5-bottom{
+        flex-basis: 30%;
+    }
+    .item5 .item5-bottom p{
+        padding-top: 0;
+    }
+    .item5 .item-img{
+        position: absolute;
+        bottom:0;
+        right: 92%;
+        width: 160px;
+    }
+    .item6{
+        grid-area: item6;
+        padding: 0;
+    }
+    .item7{
+        grid-area: item7;
+        padding-top: 20px;
+    }
+    .item8{
+        grid-area: item8;
+        padding-top: 30px;
+    }
+    .item9{
+        grid-area: item9;
+    }
+    .item10{
+        grid-area: item10;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: start;
+    }
+    .item10 .item-img ,
+    .item10 h2{
+        flex-basis: 40%;
+    }
+    .item10 .item-img{
+        right: 10%;
+    }
+
+}
+@media (min-width:992px){
+    .parent{
+        grid-template-columns: repeat(4 , 25%);
+        grid-template-rows: repeat(7 , auto) ;
+        grid-template-areas:
+        "item2 item2 item1 item1"
+        "item2 item2 item1 item1"
+        "item3 item5 item5 item8"
+        "item3 item5 item5 item8"
+        "item4 item7 item7 item8"
+        "item4 item7 item7 item8"
+        "item6 item9 item10 item10";
+    }
+    .item5{
+        padding-bottom: var(--padding-item);
+    }
+    .item5 .item-img{
+        width: 210px;
+        right: 94%;
+    }
+}

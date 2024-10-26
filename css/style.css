@@ -1,0 +1,308 @@
+/*start global style */
+:root{
+    --main-color:#9fa3a7 ;
+    --secondary-color: #3333;
+    --bg-color:#f7f8f9;
+    --padding-item: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+*,*::after,*::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.item1 ,
+.item2 , .item5 , .item10{
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin:0 auto; */
+}
+p{
+    color: var(--main-color);
+}
+.w-100{
+    width: 100%;
+}
+.d-block{
+    display: block;
+}
+body a:not(.line){
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px
+}
+body a:not(.not-arrow)::after{
+    content: "\f054";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 8px;
+    padding-bottom: 70px;
+}
+a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-family: "Arvo", serif;
+    font-weight: 400;
+}
+/* end global style */
+.item1{
+    background-color: var(--bg-color);
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    text-align: center;
+}
+.item1 h1{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 40px;
+}
+.item1 h2{
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+.item1 a{
+    color: #27b9c2;
+    font-size: 15px;
+}
+.special{
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+}
+.item2{
+    padding-top: var(--padding-item);
+}
+.item2 h2{
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+.item2 a{
+    color: var(--main-color);
+}
+.item2 a.a-special{
+    font-weight: 500;
+}
+.item2 .item-img{
+    margin-top: 40px;
+    width: 90%;
+}
+.item3{
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    text-align: center;
+    background-color: #F05638;
+}
+.item3 h2{
+    color: #fffbfb;
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.item3 a{
+    color: #ffc80a;
+}
+.item4{
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    background-color: var(--bg-color);
+    text-align: center;
+}
+.item4 h2{
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.item4 a{
+    color: #27b9c2;
+}
+.item4 .item-img{
+    position: relative;
+    right: 12%;
+}
+.item5{
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    padding-right: 20px;
+    overflow: hidden;
+}
+.item5 h2{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.item5 .item-img{
+    position: relative;
+    right: 114%;
+}
+.item5 img{
+    width: 200%;
+}
+.item5 .item5-bottom p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 23px;
+}
+.item5 .item5-bottom a{
+    color: #27b9c2;
+}
+.item6{
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    background-color: #38d5f4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item6 .container{
+    text-align: center;
+    background-color: #35cfed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f7f8f9;
+    font-size: 20px;
+}
+.item7{
+    padding: var(--padding-item) 30px 0 30px;
+    background-color: #93b6b7;
+}
+.item7 .container{
+    background-image: url(../images/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.item7 .item-img{
+    position: relative;
+    right: 13%;
+}
+.special-p{
+    background-color: #fa684f;
+    width: fit-content;
+    padding: 5px;
+    font-size: 8px;
+    border-radius: 6px;
+    color: #f7f8f9;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.item7 h2{
+    padding-top: 20px;
+    text-align: center;
+    color: #f7f8f9;
+    margin-bottom: 45px;
+}
+.item8{
+    padding-top: var(--padding-item);
+    padding-bottom: var(--padding-item);
+    background-color: #8f76bc;
+    color: #f7f8f9;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item8 img{
+    width: 60%;
+}
+.item8 .circle{
+    background-color: #8166b0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item8 .item-text h2{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 900;
+}
+.item8 p{
+    color: #f7f8f9;
+}
+.item8 .item-text p{
+    line-height: 26px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 45px ;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fffbfb;
+}
+.item8 .item-text a{
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+.item8 .icon-radius{
+    background-color: #8B72B6;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+.item8 .icon-radius::before{
+    content: "\f024";
+    font-family: "Font Awesome 6 Free";
+    color: yellow;
+    padding-right: 7px;
+}
+.item9{
+    /* padding-top: var(--padding-item); */
+    /* padding-bottom: var(--padding-item); */
+    padding: var(--padding-item) 10px;
+}
+.item9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item9 p{
+    background-color: #7bc424;
+}
+.item9 h2{
+    text-align: center;
+    margin: 20px 0;
+}
+.item10{
+    padding-bottom: var(--padding-item);
+    background-color: #2c2c2c;
+    text-align: center;
+}
+.item10 h2{
+    color: #fffbfb;
+}
+.item10 .item-img{
+    position: relative;
+    right: 20%;
+}
+
+
+.test {
+    background-image: url(../images/bg.png);
+}
